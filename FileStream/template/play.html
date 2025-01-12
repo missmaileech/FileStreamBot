@@ -2155,6 +2155,9 @@
                     <button class="magnet" onclick="n_player()">
                         <img src="https://i.ibb.co/Hd2dS4t/nPlayer.png" alt="">watch in nPlayer
                     </button>
+                    <button class="magnet" onclick="x_player()">
+                        <img src="https://i.ibb.co/gS1Vx5G/OIP.jpg" alt="">watch in XPlayer
+                    </button>
                 </div>
 
             </div>
@@ -2540,6 +2543,12 @@
         window.location.href = openNplayer;
     }
 
+    function x_player() {
+        const openstreamlink = streamlink;
+        const openXplayer = `intent:${openstreamlink}#Intent;package=video.player.videoplayer;end`;
+        window.location.href = openXplayer;
+    }
+    
     function streamDownload() {
         const openstreamlink = streamlink;
         window.location.href = openstreamlink;
