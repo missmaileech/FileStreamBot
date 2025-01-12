@@ -2167,8 +2167,8 @@
                             <p style="text-align: center; line-height: 2;word-spacing: 2px;  letter-spacing: 0.8px;">
                                 This is a Telegram Bot to Stream <span>Movies</span> and <span>Series</span> directly on
                                 Telegram. You can also
-                                <span>download</span> them if you want. This bot is developed by a Developer<span
-                                    style="font-weight: 700;">Avi</span></a>
+                                <span>download</span> them if you want. This bot is developed by a <span
+                                    style="font-weight: 700;">Developer</span></a>
                                 <br><br>If you like this bot, then don't
                                 forget to share it with your friends and family.
                             </p>
@@ -2528,6 +2528,12 @@
         window.location.href = openMx;
     }
 
+    function mx_player_pro() {
+        const openstreamlink = streamlink;
+        const openMxPr = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.pro;end`;
+        window.location.href = openMxPr;
+    }
+
     function n_player() {
         const openstreamlink = streamlink;
         const openNplayer = `nplayer-${openstreamlink}`;
@@ -2572,11 +2578,6 @@
                 console.error('Failed to copy link: ', err);
                 alert('Failed to copy link. Please try manually.');
             });
-    }
-    function mx_player_pro() {
-        const openstreamlink = streamlink;
-        const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.pro;end`;
-        window.location.href = openMx;
     }
 </script>
 
